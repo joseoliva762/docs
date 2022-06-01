@@ -6,7 +6,7 @@ import { useParams } from 'react-router-dom';
 
 export const TextEditor = () => {
   const SAVE_INTERVAL = 2000;
-  const { socket } = useConnection('http://localhost:3001');
+  const { socket } = useConnection('https://terra-docs-backend.herokuapp.com');
   const [ quill, setQuill ] = useState(null);
   const { id: documentId } = useParams();
 
